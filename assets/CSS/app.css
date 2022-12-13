@@ -1,0 +1,174 @@
+#screen-2{
+    display: none;
+}
+
+/*-----CUSTOM RADIO INPUTS-----*/
+#rating-form input[type="radio"]{
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+#rating-form label{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(218, 10%, 22%);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align:middle;
+    line-height: 53px;
+    color: hsl(217, 12%, 63%);
+    font-family: "Overpass";
+    font-weight: 400;
+    vertical-align: middle;
+    transition: 0.15s;
+}
+#rating-form label:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+#rating-form input[type="radio"]:checked + label{
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+}
+#rating-form input[type="radio"].active + label{
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+}
+#rating-form input[type="radio"].active + label:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+/*-----CARD CSS-----*/
+body{
+    font-size: 15px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(216, 12%, 8%);
+}
+.card{
+    width: 410px;
+    height: 410px;
+    background-image: radial-gradient(farthest-side at 50% 10%,rgb(40,45,51),rgb(23,30,40));
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----SCREEN 1 CSS-----*/
+#screen-1{
+    width: 85%;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.holder{
+    flex-grow: 1;
+}
+.image-container{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(37,47,57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-container{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-container > h1{
+    font-family: "Overpass";
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+.text-container > p {
+    font-family: "Overpass";
+    font-weight: 400;
+    font-size: 1em;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.3em;
+}
+form{
+    width: 100%;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.radios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button{
+    width: 100%;
+    border-style: none;
+    padding: 0.8em 0;
+    font-family: "Overpass";
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    border-radius: 19px;
+    transition: 0.12s;
+}
+button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;   
+    cursor: pointer;
+}
+/*-----SCREEN 2 CSS-----*/
+#screen-2{
+    width: 85%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating{
+    flex-grow: 1;
+}
+.img-container{
+    flex-grow: 2;
+}
+.img-container > img{
+    height: 80%;
+}
+
+#screen-2 .text-container{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rating{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    font-family: "Overpass";
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 0 1em;
+}
